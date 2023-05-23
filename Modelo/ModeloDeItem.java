@@ -1,3 +1,5 @@
+package Modelo;
+
 public class ModeloDeItem {
     //Jesus é o caminho, a verdade e a vida!!!
     private String nome;
@@ -9,7 +11,7 @@ public class ModeloDeItem {
 
     @Override
     public String toString() {
-        return "ModeloDeItem{" +
+        return "Modelo.ModeloDeItem{" +
                 "nome='" + nome + '\'' +
                 ", idDoItem=" + idDoItem +
                 ", valor=" + valor +
