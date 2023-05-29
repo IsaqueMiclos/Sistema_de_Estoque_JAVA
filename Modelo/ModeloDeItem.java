@@ -8,20 +8,20 @@ public class ModeloDeItem {
     private double valor;
     private Classificacao tipo;
     private int quantidade;
-
-    @Override
-    public String toString() {
-        return "Modelo.ModeloDeItem{" +
-                "nome='" + nome + '\'' +
-                ", idDoItem=" + idDoItem +
-                ", valor=" + valor +
-                ", tipo=" + tipo +
-                ", quantidade=" + quantidade +
-                '}';
-    }
+    private String complemento;
 
     public ModeloDeItem() {
 
+    }
+
+    public ModeloDeItem(String nome, double valor, Classificacao tipo, int quantidade, String complemento) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.tipo = tipo;
+        this.valor = valor;
+        this.complemento = complemento;
+        this.idDoItem = id + 1;
+        id = this.idDoItem;
     }
 
     public ModeloDeItem(String nome, double valor, Classificacao tipo, int quantidade){
@@ -31,6 +31,14 @@ public class ModeloDeItem {
         this.valor = valor;
         this.idDoItem = id + 1;
         id = this.idDoItem;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
     public String getNome() {

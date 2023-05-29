@@ -15,6 +15,7 @@ public class Estoque {
             System.out.println("valor: " + item.getValor() + "R$");
             System.out.println("quantidade: " + item.getQuantidade());
             System.out.println("tipo: " + item.getTipo());
+            System.out.println("Complemento: " + item.getComplemento());
         }
     }
 
